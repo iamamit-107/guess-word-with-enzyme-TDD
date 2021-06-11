@@ -1,7 +1,17 @@
 import React from "react";
 
-const congrates = ({ success }) => {
-  return <div></div>;
+const Congrates = ({ success }) => {
+  return (
+    <>
+      {success ? (
+        <div data-test="component-congrates">
+          <p data-test="congrates-message">Congratulations!!</p>
+        </div>
+      ) : (
+        <div data-test="component-congrates"></div>
+      )}
+    </>
+  );
 };
 
-export default congrates;
+export default Congrates;
